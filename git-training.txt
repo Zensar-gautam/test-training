@@ -1,0 +1,86 @@
+
+
+git config --global user.name "git september"
+git config --global user.email "gautam.durge@zensar.com"
+git config --edit --global
+
+* creating folder and project
+cd "D:\git test"
+
+* create new project
+git init DemoApp
+
+ls -la
+
+git status
+
+notepad++ read.md
+
+*shows as untracked files which will be committed--use git add
+git add read.md
+git status
+* to commit files to the repository (cause they are local)
+git commit -m "first commit"
+
+* to add all files in one go
+git add .
+
+--on branch master
+nothing to commit,working tree clean
+
+* create new repository on github site
+
+*git remote -v
+ fetch and push
+
+* create pull request for 'master' on github. Branch 'master'
+set up to track remote branch 'master' from 'origin'
+git remote add origin https://github.com/Zensar-gautam/Zensar-repository.git
+
+* to publish your local commits
+git push -u origin master
+
+* sshkey generation public/private rsa key pair
+ssh-keygen -t rsa -b 4096 -C "gautam.durge@zensar.com"
+
+* to connect to host github.com -- use port 22
+ssh -T git@github.com
+
+*git clone give https url path
+
+* branches
+git push -u origin branch
+
+* to go to branch name
+git checkout -b 'branch name'
+
+* check logs
+git log
+
+git log --online --graph --decorate --all
+
+* check tags 
+git tag
+
+git tag stable master
+
+git tag -a v0.1 -m "0.1 release" 
+
+git push --tags
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
